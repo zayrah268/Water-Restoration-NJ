@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Expert Water Damage Restoration in New Jersey</title>
+  <meta name="description" content="Professional water damage restoration in New Jersey: fast response, full drying, sanitization, repairs, and mold prevention for homes & businesses." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0B1220;
+      --surface:#0F1B33;
+      --surface-2:#0D172C;
+      --text:#EAF2FF;
+      --muted:#B9C7E6;
+      --line:rgba(255,255,255,.10);
+
+      --brand:#2EC4B6;   /* teal */
+      --brand-2:#4C7DFF; /* blue */
+      --warn:#FFB703;    /* gold */
+      --danger:#FF5C7A;
+
+      --shadow:0 18px 60px rgba(0,0,0,.35);
+      --radius:18px;
+      --radius-sm:14px;
+      --max:1200px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1100px 700px at 10% 10%, rgba(46,196,182,.20), transparent 60%),
+        radial-gradient(900px 600px at 90% 15%, rgba(76,125,255,.22), transparent 55%),
+        radial-gradient(900px 600px at 20% 95%, rgba(255,183,3,.12), transparent 60%),
+        linear-gradient(180deg, #070B14 0%, var(--bg) 55%, #070B14 100%);
+    }
+    a{color:inherit;text-decoration:none}
+    .container{width:min(100% - 32px, var(--max));margin:0 auto}
+
+    /* Header (one line) */
+    header{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter:blur(10px);
+      background:rgba(7,11,20,.55);
+      border-bottom:1px solid var(--line);
+    }
+    .header-row{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:14px 0;gap:14px;
+      white-space:nowrap;overflow:hidden;  /* one-line header */
+    }
+    .brand-wrap{display:flex;align-items:center;gap:10px;min-width:220px}
+    .logo{
+      width:38px;height:38px;border-radius:12px;
+      background:linear-gradient(135deg, var(--brand), var(--brand-2));
+      box-shadow:0 10px 30px rgba(46,196,182,.18);
+      position:relative;
+      flex:0 0 auto;
+    }
+    .logo:after{
+      content:"";position:absolute;inset:9px;border-radius:10px;
+      border:1px solid rgba(255,255,255,.30);
+    }
+    .brand-text{display:flex;flex-direction:column;line-height:1.1}
+    .brand-text strong{font-weight:800;letter-spacing:.2px}
+    .brand-text span{color:var(--muted);font-weight:600;font-size:12.5px}
+
+    nav{
+      display:flex;align-items:center;gap:14px;
+      overflow:hidden;text-overflow:ellipsis;
+    }
+    nav a{
+      color:var(--muted);font-weight:600;font-size:13.5px;
+      padding:8px 10px;border-radius:12px;border:1px solid transparent;
+    }
+    nav a:hover{
+      color:var(--text);
+      border-color:rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+    }
+
+    .cta{display:flex;gap:10px;align-items:center;justify-content:flex-end;min-width:250px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      padding:10px 14px;border-radius:14px;
+      border:1px solid rgba(255,255,255,.14);
+      font-weight:700;font-size:13.5px;
+      transition:transform .15s ease, background .15s ease, border-color .15s ease;
+      background:rgba(255,255,255,.05);
+    }
+    .btn:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.22)}
+    .btn-primary{
+      border:none;
+      background:linear-gradient(135deg, var(--brand), var(--brand-2));
+      box-shadow:0 16px 36px rgba(76,125,255,.20);
+    }
+
+    /* Hero */
+    .hero{padding:56px 0 26px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:stretch}
+    .hero-card{
+      border-radius:var(--radius);
+      padding:28px;
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow:var(--shadow);
+      position:relative;overflow:hidden;
+    }
+    .hero-card:before{
+      content:"";position:absolute;inset:-2px;pointer-events:none;
+      background:
+        radial-gradient(600px 220px at 25% 20%, rgba(46,196,182,.22), transparent 70%),
+        radial-gradient(520px 200px at 70% 10%, rgba(76,125,255,.22), transparent 70%);
+    }
+    .hero-card>*{position:relative}
+
+    .badge{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 12px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.05);
+      color:var(--muted);
+      font-weight:700;font-size:12px;
+    }
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 6px rgba(46,196,182,.15)}
+    h1{margin:14px 0 10px;font-size:clamp(30px, 3.4vw, 44px);line-height:1.06;letter-spacing:-.5px}
+    .lead{color:var(--muted);font-size:15.5px;line-height:1.65;margin:0 0 16px;max-width:70ch}
+
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+    .mini{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .pill{border-radius:16px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);padding:12px}
+    .pill strong{display:block;font-weight:800;font-size:13.5px;margin-bottom:4px}
+    .pill span{display:block;color:var(--muted);font-size:12.5px;line-height:1.35}
+
+    .side-card{
+      border-radius:var(--radius);
+      padding:22px;
+      background:linear-gradient(180deg, rgba(15,27,51,.92), rgba(13,23,44,.92));
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow:var(--shadow);
+      position:relative;overflow:hidden;
+    }
+    .side-card:before{
+      content:"";position:absolute;width:260px;height:260px;right:-120px;top:-120px;
+      background:radial-gradient(circle at 30% 30%, rgba(255,183,3,.20), transparent 60%);
+    }
+    .side-card>*{position:relative}
+    .side-title{font-weight:900;letter-spacing:.2px;margin:0 0 10px;font-size:16px}
+
+    .checklist{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+    .checklist li{display:flex;gap:10px;align-items:flex-start;color:var(--muted);line-height:1.5;font-size:13.5px}
+    .tick{
+      width:18px;height:18px;border-radius:8px;
+      background:rgba(46,196,182,.18);
+      border:1px solid rgba(46,196,182,.40);
+      display:inline-grid;place-items:center;margin-top:2px;flex:0 0 auto;
+    }
+    .tick svg{width:12px;height:12px;fill:var(--brand)}
+
+    /* Content sections */
+    main{padding:18px 0 60px}
+    .section{
+      margin-top:18px;
+      border-radius:var(--radius);
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.03);
+      overflow:hidden;
+    }
+    .section-header{
+      padding:18px 20px;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      display:flex;align-items:center;justify-content:space-between;gap:14px;
+    }
+    .section-header h2{margin:0;font-size:16px;letter-spacing:.2px;font-weight:900}
+    .tag{
+      font-size:12px;color:var(--muted);font-weight:800;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+      padding:8px 10px;border-radius:999px;white-space:nowrap;
+    }
+    .section-body{padding:18px 20px 20px}
+    .prose{color:var(--muted);line-height:1.75;font-size:14.5px}
+    .prose p{margin:0 0 14px}
+
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+    .card{border-radius:var(--radius-sm);border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.03);padding:16px}
+    .card h3{margin:0 0 8px;font-size:14px;font-weight:900;letter-spacing:.2px;color:var(--text)}
+    .list{margin:0;padding-left:18px;color:var(--muted);line-height:1.7;font-size:14px}
+    .list li{margin:6px 0}
+
+    /* Steps */
+    .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:12px}
+    .step{border-radius:16px;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.03);padding:14px;min-height:140px}
+    .num{
+      width:34px;height:34px;border-radius:14px;display:grid;place-items:center;
+      font-weight:900;background:rgba(76,125,255,.16);border:1px solid rgba(76,125,255,.35);
+      margin-bottom:10px;
+    }
+    .step h4{margin:0 0 8px;font-size:13.5px;font-weight:900}
+    .step p{margin:0;color:var(--muted);font-size:13.2px;line-height:1.55}
+
+    /* Table */
+    .table-wrap{
+      overflow:auto;border-radius:16px;border:1px solid rgba(255,255,255,.10);
+      background:rgba(0,0,0,.12);margin-top:10px;
+    }
+    table{width:100%;border-collapse:collapse;min-width:760px}
+    th,td{padding:14px;text-align:left;border-bottom:1px solid rgba(255,255,255,.08);font-size:13.5px;color:var(--muted);vertical-align:top}
+    th{color:var(--text);font-size:12px;letter-spacing:.6px;text-transform:uppercase;background:rgba(255,255,255,.04);white-space:nowrap}
+    tr:last-child td{border-bottom:none}
+
+    .chip{
+      display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);
+      font-weight:800;font-size:12px;color:var(--text);
+    }
+    .chip.ok{border-color:rgba(46,196,182,.35);background:rgba(46,196,182,.10)}
+    .chip.warn{border-color:rgba(255,183,3,.35);background:rgba(255,183,3,.10)}
+
+    /* Link pills (your 2 required links) */
+    .link-pill{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:6px 10px;border-radius:999px;
+      border:1px solid rgba(46,196,182,.38);
+      background:rgba(46,196,182,.12);
+      color:var(--text);
+      font-weight:900;
+      white-space:nowrap;
+    }
+    .link-pill:hover{
+      border-color:rgba(76,125,255,.45);
+      background:rgba(76,125,255,.12);
+    }
+    .arrow{width:14px;height:14px;opacity:.9}
+
+    /* Footer */
+    footer{border-top:1px solid var(--line);background:rgba(7,11,20,.65);padding:26px 0}
+    .footer-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;align-items:start}
+    .fine{color:var(--muted);font-size:13px;line-height:1.6;margin:8px 0 0}
+    .social{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap}
+    .social a{
+      display:inline-flex;align-items:center;gap:10px;padding:10px 12px;border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);
+      color:var(--muted);font-weight:800;font-size:13px;
+    }
+    .social a:hover{color:var(--text);border-color:rgba(255,255,255,.20)}
+
+    /* Responsive */
+    @media (max-width:980px){
+      nav{display:none} /* keeps header one-line clean */
+      .hero-grid{grid-template-columns:1fr}
+      .steps{grid-template-columns:1fr 1fr}
+      .mini{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr}
+      .social{justify-content:flex-start}
+      .cta{min-width:auto}
+      .brand-wrap{min-width:auto}
+    }
+    @media (max-width:520px){
+      .steps{grid-template-columns:1fr}
+      .btn{padding:10px 12px}
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER (one line) -->
+  <header>
+    <div class="container">
+      <div class="header-row">
+        <div class="brand-wrap">
+          <div class="logo" aria-hidden="true"></div>
+          <div class="brand-text">
+            <strong>Thora Restoration</strong>
+            <span>New Jersey • Water Damage Response</span>
+          </div>
+        </div>
+
+        <nav aria-label="Primary">
+          <a href="#understanding">Understanding</a>
+          <a href="#causes">Common Causes</a>
+          <a href="#process">Process</a>
+          <a href="#choose">Choose Company</a>
+          <a href="#prevention">Prevention</a>
+        </nav>
+
+        <div class="cta">
+          <a class="btn" href="#contact">Quick Help</a>
+          <a class="btn btn-primary" href="#process">See Restoration Steps</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO / INTRO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+
+        <div class="hero-card">
+          <div class="badge"><span class="dot" aria-hidden="true"></span> 24/7-ready guidance • Faster response = lower damage</div>
+
+          <h1>Expert Water Damage Restoration in New Jersey</h1>
+
+          <p class="lead">
+            Water damage can strike at any time, turning a safe and comfortable home into a stressful environment within minutes.
+            In New Jersey, unpredictable weather, heavy rainstorms, burst pipes, and basement flooding are common causes of property damage.
+            Whether it is a small leak behind a wall or major flooding after a storm, acting quickly is essential.
+            Professional water damage restoration in NJ helps homeowners and businesses recover safely, efficiently, and with minimal long-term impact.
+          </p>
+
+          <!-- REQUIRED LINK #1 (Intro, mid) -->
+          <p class="lead" style="margin-top:-6px;">
+            Need fast, trusted help? Visit
+            <a class="link-pill" href="https://nshhomeservices.com/" target="_blank" rel="noopener">
+              Water Damage Restoration in NJ
+              <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"/>
+                <path fill="currentColor" d="M5 5h6v2H7v10h10v-4h2v6H5V5z"/>
+              </svg>
+            </a>
+            for a professional response and safe restoration.
+          </p>
+
+          <p class="lead">
+            Water intrusion does more than soak carpets and walls. It can weaken structural components, encourage mold growth, damage electrical
+            systems, and reduce indoor air quality. Understanding how the restoration process works and why professional assistance matters can
+            make a significant difference in protecting your property and health.
+          </p>
+
+          <div class="hero-actions" id="contact">
+            <a class="btn btn-primary" href="#choose">Choose the Right Restoration Team</a>
+            <a class="btn" href="#prevention">Prevent Future Damage</a>
+            <a class="btn" href="#comparison">Minor vs Major Damage</a>
+          </div>
+
+          <div class="mini" aria-label="Highlights">
+            <div class="pill">
+              <strong>Rapid Response</strong>
+              <span>Quick extraction + drying lowers structural and mold risk.</span>
+            </div>
+            <div class="pill">
+              <strong>Thorough Dry-Out</strong>
+              <span>Moisture meters + dehumidification target hidden water.</span>
+            </div>
+            <div class="pill">
+              <strong>Safe Restoration</strong>
+              <span>Sanitization, repairs, and prevention for long-term peace.</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="side-card" aria-label="Why water damage needs professionals">
+          <h3 class="side-title">Why professional restoration matters</h3>
+          <ul class="checklist">
+            <li>
+              <span class="tick" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+              </span>
+              Structural components can weaken, causing hidden long-term deterioration.
+            </li>
+            <li>
+              <span class="tick" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+              </span>
+              Mold can start within 24–48 hours in damp, enclosed areas.
+            </li>
+            <li>
+              <span class="tick" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+              </span>
+              Electrical systems and indoor air quality can become serious safety risks.
+            </li>
+            <li>
+              <span class="tick" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+              </span>
+              Proper assessment helps stop repeat leaks and recurring damage.
+            </li>
+          </ul>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <main class="container">
+
+    <!-- Understanding -->
+    <section class="section" id="understanding">
+      <div class="section-header">
+        <h2>Understanding Water Damage in New Jersey</h2>
+        <div class="tag">NJ climate • year-round risk</div>
+      </div>
+      <div class="section-body">
+        <div class="prose">
+          <p>
+            New Jersey’s climate creates unique challenges for property owners. From coastal flooding and hurricanes to winter pipe bursts and heavy
+            rainfall, properties across the state face year-round risks. Basements are especially vulnerable due to groundwater seepage and poor
+            drainage systems.
+          </p>
+          <p>
+            Water damage generally falls into three categories. Clean water damage may result from broken supply lines or overflowing sinks.
+            Gray water damage involves slightly contaminated water from appliances or sump pump failures. Black water damage is the most severe,
+            often caused by sewage backups or floodwaters carrying harmful bacteria.
+          </p>
+          <p>
+            No matter the category, immediate response is critical. The longer water remains in contact with surfaces, the greater the risk of
+            structural deterioration and mold infestation.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Water categories at a glance</h3>
+            <ul class="list">
+              <li><span class="chip ok">Clean</span> Broken supply lines, sinks, pipe leaks</li>
+              <li><span class="chip warn">Gray</span> Appliances, sump failures, used water</li>
+              <li><span class="chip">Black</span> Sewage backups, floodwater contamination</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Why time matters</h3>
+            <ul class="list">
+              <li>Moisture spreads behind walls, under floors, and in ceilings</li>
+              <li>Wood warps, drywall weakens, odors develop</li>
+              <li>Mold risk rises fast in humid conditions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Causes -->
+    <section class="section" id="causes">
+      <div class="section-header">
+        <h2>Common Causes of Water Damage</h2>
+        <div class="tag">Homes + businesses</div>
+      </div>
+      <div class="section-body">
+        <div class="prose">
+          <p>
+            Water damage in NJ properties can happen in various ways. Some causes are sudden and dramatic, while others develop slowly over time.
+            Here are the most frequent sources of water damage in New Jersey homes and businesses:
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <ul class="list">
+              <li>Severe storms and coastal flooding</li>
+              <li>Burst or frozen pipes during winter</li>
+              <li>Roof leaks and damaged shingles</li>
+              <li>Appliance malfunctions such as washing machines or dishwashers</li>
+            </ul>
+          </div>
+          <div class="card">
+            <ul class="list">
+              <li>Sewage backups</li>
+              <li>Basement foundation cracks</li>
+              <li>Poor drainage around the property</li>
+              <li>Slow leaks behind walls or under flooring</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="prose" style="margin-top:12px;">
+          <p>
+            Each of these situations requires a tailored restoration approach. A professional water damage restoration company in NJ evaluates the
+            source of the problem before beginning repairs to prevent recurring issues.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section" id="process">
+      <div class="section-header">
+        <h2>The Water Damage Restoration Process</h2>
+        <div class="tag">Step-by-step recovery</div>
+      </div>
+      <div class="section-body">
+        <div class="prose">
+          <p>
+            Restoration is not simply about removing visible water. It is a structured, step-by-step process designed to fully dry, clean, and
+            restore affected areas.
+          </p>
+        </div>
+
+        <div class="steps" aria-label="Restoration steps">
+          <div class="step">
+            <div class="num">1</div>
+            <h4>Inspection & Damage Assessment</h4>
+            <p>Moisture meters and thermal imaging detect hidden water behind walls, under floors, and within ceilings to plan the restoration.</p>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <h4>Water Extraction</h4>
+            <p>Industrial pumps and vacuums remove standing water quickly—reducing secondary damage and shortening the dry-out timeline.</p>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <h4>Drying & Dehumidification</h4>
+            <p>Air movers and commercial dehumidifiers remove trapped moisture from building materials. Drying may take several days.</p>
+          </div>
+          <div class="step">
+            <div class="num">4</div>
+            <h4>Cleaning & Sanitization</h4>
+            <p>Specialized cleaning agents and antimicrobial treatments address bacteria, odors, and contamination—especially after gray/black water.</p>
+          </div>
+          <div class="step">
+            <div class="num">5</div>
+            <h4>Repairs & Restoration</h4>
+            <p>From drywall repair to reconstruction, the goal is to restore the property to its pre-damage condition—safely and completely.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Immediate action -->
+    <section class="section" id="action">
+      <div class="section-header">
+        <h2>Why Immediate Action Matters</h2>
+        <div class="tag">Prevent cost + risk</div>
+      </div>
+      <div class="section-body">
+        <div class="prose">
+          <p>
+            Delaying water damage restoration can significantly increase repair costs. Within 24 to 48 hours, mold can begin to grow. Wood may warp,
+            drywall can crumble, and electrical hazards may develop. In commercial properties, downtime can lead to revenue loss.
+          </p>
+
+          <!-- REQUIRED LINK #2 (Content mid, relevant anchor text) -->
+          <p>
+            For more helpful restoration insights and examples, check this resource:
+            <a class="link-pill" href="https://zayrah268.github.io/Water-Damage-/" target="_blank" rel="noopener">
+              Water Damage Restoration Guide & Recovery Tips
+              <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"/>
+                <path fill="currentColor" d="M5 5h6v2H7v10h10v-4h2v6H5V5z"/>
+              </svg>
+            </a>
+            so you can make faster, safer decisions during an emergency.
+          </p>
+
+          <p>
+            Professional water damage restoration in NJ ensures rapid response, often with 24/7 emergency services. Fast intervention minimizes damage
+            and reduces overall restoration expenses.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card" style="border-color: rgba(46,196,182,.20);">
+            <h3>Fast intervention helps</h3>
+            <ul class="list">
+              <li>Stop moisture migration into framing and subfloors</li>
+              <li>Reduce mold-friendly conditions</li>
+              <li>Lower repair scope and insurance complications</li>
+            </ul>
+          </div>
+          <div class="card" style="border-color: rgba(255,183,3,.25); background: rgba(255,183,3,.06);">
+            <h3>Commercial properties</h3>
+            <ul class="list">
+              <li>Minimize downtime and revenue loss</li>
+              <li>Maintain safety and compliance</li>
+              <li>Keep operations moving with staged restoration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mold -->
+    <section class="section" id="mold">
+      <div class="section-header">
+        <h2>Mold Growth and Health Concerns</h2>
+        <div class="tag">Indoor air safety</div>
+      </div>
+      <div class="section-body">
+        <div class="prose">
+          <p>
+            One of the most serious consequences of water damage is mold growth. Mold thrives in damp environments and spreads quickly. In New Jersey’s
+            humid climate, mold can develop in hidden areas such as wall cavities, insulation, and crawl spaces.
+          </p>
+          <p>
+            Exposure to mold may cause respiratory issues, allergies, and skin irritation. Children, elderly individuals, and those with compromised immune
+            systems are particularly vulnerable. Proper drying and antimicrobial treatment during restoration help prevent mold infestations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison -->
+    <section class="section" id="comparison">
+      <div class="section-header">
+        <h2>Comparing Minor vs Major Water Damage</h2>
+        <div class="tag">Expectations • timeline • cost</div>
+      </div>
+      <div class="section-body">
+        <div class="prose">
+          <p>The extent of water damage determines the complexity of the restoration process. The table below highlights key differences:</p>
+        </div>
+
+        <div class="table-wrap" role="region" aria-label="Comparison table" tabindex="0">
+          <table>
+            <thead>
+              <tr>
+                <th>Aspect</th>
+                <th>Minor Water Damage</th>
+                <th>Major Water Damage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong style="color:var(--text);">Affected Area</strong></td>
+                <td>Small, localized area</td>
+                <td>Multiple rooms or entire property</td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--text);">Water Type</strong></td>
+                <td>Usually clean water</td>
+                <td>Often contaminated or floodwater</td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--text);">Structural Impact</strong></td>
+                <td>Minimal damage</td>
+                <td>Possible structural weakening</td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--text);">Restoration Time</strong></td>
+                <td>1–3 days</td>
+                <td>Several days to weeks</td>
+              </tr>
+              <tr>
+                <td><strong style="color:var(--text);">Cost Range</strong></td>
+                <td>Lower repair cost</td>
+                <td>Higher restoration expenses</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="prose" style="margin-top:12px;">
+          <p>Understanding the severity helps property owners set realistic expectations regarding timelines and costs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Choose company -->
+    <section class="section" id="choose">
+      <div class="section-header">
+        <h2>Choosing the Right Water Damage Restoration Company in NJ</h2>
+        <div class="tag">Quality • equipment • trust</div>
+      </div>
+      <div class="section-body">
+        <div class="prose">
+          <p>
+            Selecting a reliable restoration company is crucial for effective recovery. Not all service providers offer the same level of expertise and equipment.
+          </p>
+          <p>
+            When searching for water damage restoration in NJ, consider the following factors:
+            Experience and certification are essential. Look for companies certified by industry organizations that follow established restoration standards.
+            Availability also matters. Emergencies can occur at any hour, so 24/7 response is important.
+            Insurance assistance is another key consideration. A reputable company will help document damage and work directly with your insurance provider.
+            Advanced equipment and trained technicians ensure thorough drying and safe restoration.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>What to look for</h3>
+            <ul class="list">
+              <li>Certified technicians + proven experience</li>
+              <li>24/7 emergency response</li>
+              <li>Moisture detection + professional drying setup</li>
+              <li>Clear documentation for insurance</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>What good teams prevent</h3>
+            <ul class="list">
+              <li>Hidden damp spots that cause future mold</li>
+              <li>Recurring leaks from untreated sources</li>
+              <li>Odors from incomplete sanitization</li>
+              <li>Structural rot from trapped moisture</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prevention -->
+    <section class="section" id="prevention">
+      <div class="section-header">
+        <h2>Preventing Future Water Damage</h2>
+        <div class="tag">Maintenance that saves money</div>
+      </div>
+      <div class="section-body">
+        <div class="prose">
+          <p>
+            While some incidents are unavoidable, preventive measures can reduce the risk of water damage. Regular roof inspections, proper gutter
+            maintenance, and sealing foundation cracks can help protect your property.
+          </p>
+          <p>
+            Installing a sump pump with a battery backup system is particularly useful for NJ basements. Insulating pipes during winter reduces the
+            risk of freezing and bursting. Routine plumbing inspections can also identify leaks before they escalate.
+          </p>
+          <p>Preventive maintenance not only safeguards your property but also saves money in the long term.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Basement protection</h3>
+            <ul class="list">
+              <li>Sump pump + battery backup</li>
+              <li>Improve grading + drainage around the home</li>
+              <li>Seal foundation cracks and joints</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Whole-home prevention</h3>
+            <ul class="list">
+              <li>Seasonal roof + gutter checks</li>
+              <li>Insulate exposed pipes in winter</li>
+              <li>Routine plumbing inspections for early leak detection</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Residential/Commercial -->
+    <section class="section" id="services">
+      <div class="section-header">
+        <h2>Residential and Commercial Restoration Services</h2>
+        <div class="tag">Homes • Offices • Retail</div>
+      </div>
+      <div class="section-body">
+        <div class="prose">
+          <p>
+            Water damage affects both homes and businesses in New Jersey. Residential restoration focuses on protecting living spaces and personal belongings.
+            Commercial restoration prioritizes minimizing downtime and maintaining operational continuity.
+          </p>
+          <p>
+            Businesses such as offices, retail stores, and restaurants require rapid recovery to avoid financial losses. Professional restoration teams use
+            strategic planning to ensure efficient cleanup while maintaining safety standards.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="section" id="conclusion">
+      <div class="section-header">
+        <h2>Conclusion</h2>
+        <div class="tag">Peace of mind • protected investment</div>
+      </div>
+      <div class="section-body">
+        <div class="prose">
+          <p>
+            Water damage restoration in NJ is more than just cleanup; it is a comprehensive process that protects property value, structural integrity,
+            and indoor health. Given New Jersey’s weather conditions and aging infrastructure in some areas, property owners must stay prepared for unexpected
+            water emergencies.
+          </p>
+          <p>
+            Quick response, professional assessment, and thorough drying are the foundation of successful restoration. Whether dealing with a minor leak or
+            significant flooding, expert assistance ensures that damage is addressed completely and safely.
+          </p>
+          <p>
+            By understanding the causes, process, and importance of professional water damage restoration, homeowners and businesses can make informed decisions
+            during stressful situations. Taking immediate action not only restores your property but also provides peace of mind knowing your investment is protected
+            for the future.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div class="logo" aria-hidden="true" style="width:34px;height:34px;border-radius:12px;"></div>
+            <div>
+              <strong style="font-weight:900;">Thora Restoration</strong>
+              <div class="fine">Full-service water damage restoration guidance for New Jersey property owners.</div>
+            </div>
+          </div>
+          <p class="fine">
+            Tip: Keep emergency shutoff locations documented (main water valve + electrical panel) so you can act fast when water incidents happen.
+          </p>
+          <p class="fine" style="margin-top:10px;">© <span id="year"></span> Thora Restoration. All rights reserved.</p>
+        </div>
+
+        <div class="social" aria-label="Social links">
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="YouTube">YouTube</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
